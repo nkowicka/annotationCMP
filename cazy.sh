@@ -1,5 +1,10 @@
 #!/bin/bash
 
+chmod +x usearch_AA.sh
+chmod +x usearch_CE.sh
+chmod +x usearch_GT.sh
+chmod +x usearch_GH.sh
+chmod +x usearch_PL.sh
 
 ./usearch_AA.sh $*
 ./usearch_CE.sh $*
