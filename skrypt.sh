@@ -33,14 +33,13 @@ echo $file
 
 if [ $# = "0" ]; then
    if [ "$metod" = "cazy" ]; then
-      ./cazy.sh $evalue $file /home/kamilan/cazy/auxenochlorella_protothecoides.fasta /home/kamilan/cazy/chlorella_variabilis.fasta /home/kamilan/cazy/helicosporidium_unip_proteins.fasta /home/kamilan/cazy/Saccharomyces_cerevisiae.fasta
-      echo "jestem"
+      ./cazy.sh $evalue $file auxenochlorella_protothecoides.fasta chlorella_variabilis.fasta helicosporidium_unip_proteins.fasta Saccharomyces_cerevisiae.fasta
 
    elif [ "$metod" = "merops" ]; then
-      ./mer.sh $evalue $file /home/kamilan/cazy/auxenochlorella_protothecoides.fasta /home/kamilan/cazy/chlorella_variabilis.fasta /home/kamilan/cazy/helicosporidium_unip_proteins.fasta /home/kamilan/cazy/Saccharomyces_cerevisiae.fasta
+      ./mer.sh $evalue $file auxenochlorella_protothecoides.fasta chlorella_variabilis.fasta helicosporidium_unip_proteins.fasta Saccharomyces_cerevisiae.fasta
 
    elif [ "$metod" = "phi" ]; then
-      ./phi.sh $evalue $file /home/kamilan/cazy/auxenochlorella_protothecoides.fasta /home/kamilan/cazy/chlorella_variabilis.fasta /home/kamilan/cazy/helicosporidium_unip_proteins.fasta /home/kamilan/cazy/Saccharomyces_cerevisiae.fasta
+      ./phi.sh $evalue $file auxenochlorella_protothecoides.fasta chlorella_variabilis.fasta helicosporidium_unip_proteins.fasta Saccharomyces_cerevisiae.fasta
    else echo "Błędnie wprowadzona komenda. Schemat: ./skrypt -m nazwa_metody -e evalue -p pliki , gdzie nazwa_metody to możliwe jedno z: cazy, merops lub phi . Evalue powinno być w formacie np. 1e-9  . Natomiast pliki są ścieżkami dostępu plików FASTA na których ma zostać przeprowadzaona annotacja"
    fi
 
