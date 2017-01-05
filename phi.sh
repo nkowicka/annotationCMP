@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod +x usearch_phi.sh
+
 ./usearch_phi.sh $*
 
 touch AX
