@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod +x usearch_mer.sh
+
 ./usearch_mer.sh $*
 
 touch AX
