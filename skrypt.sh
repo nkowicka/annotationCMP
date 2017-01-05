@@ -1,5 +1,9 @@
 #!/bin/sh
 
+chmod +x cazy.sh
+chmod +x phi.sh
+chmod +x mer.sh
+
 while :
 do
    case "$1" in
