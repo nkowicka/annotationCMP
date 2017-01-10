@@ -1,40 +1,40 @@
 #!/bin/sh
 
-#if [ AA.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 1 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast AA.fasta -output AA.udb
-#fi
-#if [ CE.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 2 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast CE.fasta -output CE.udb
-#fi
-#if [ GH.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 3 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast GH.fasta -output GH.udb
-#fi
-#if [ GT.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 4 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast GT.fasta -output GT.udb
-#fi
-#if [ PL.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 5 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast PL.fasta -output PL.udb
-#fi
-#if [ merops_scan.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 6 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast merops_scan.fasta -output merops_scan.udb
-#fi
-#if [ PHI.udb does not exist ];
-#then
-#   echo "Pierwsze użycie programu, trwa pobieranie danych 7 z 7"
-#   ./usearch8.1.1861_i86linux32 -makeudb_ublast PHI.fasta -output PHI.udb
-#fi
+if [ AA.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 1 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/AA.udb
+fi
+if [ CE.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 2 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/CE.udb
+fi
+if [ GH.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 3 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GH.udb
+fi
+if [ GT.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 4 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GT.udb
+fi
+if [ PL.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 5 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PL.udb
+fi
+if [ merops_scan.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 6 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/merops_scan.udb
+fi
+if [ PHI.udb does not exist ];
+then
+   echo "Pierwsze użycie programu, trwa pobieranie danych 7 z 7"
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PHI.udb
+fi
 
 
 chmod +x cazy.sh
