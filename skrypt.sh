@@ -1,39 +1,48 @@
 #!/bin/sh
 
+chmod +x usearch8.1.1861_i86linux32
+
 if [ ! -f AA.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 1 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/AA.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/AA.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast AA.fasta -output AA.udb 
 fi
 if [ ! -f CE.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 2 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/CE.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/CE.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast CE.fasta -output CE.udb
 fi
 if [ ! -f GH.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 3 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GH.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GH.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast GH.fasta -output GH.udb
 fi
 if [ ! -f GT.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 4 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GT.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/GT.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast GT.fasta -output GT.udb
 fi
 if [ ! -f PL.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 5 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PL.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PL.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast PL.fasta -output PL.udb
 fi
 if [ ! -f merops_scan.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 6 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/merops_scan.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/merops_scan.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast merops_scan.fasta -output merops_scan.udb
 fi
 if [ ! -f PHI.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 7 z 7"
-   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PHI.udb
+   wget students.mimuw.edu.pl/~kn348856/annotationCMP/PHI.fasta
+   ./usearch8.1.1861_i86linux32 -makeudb_ublast PHI.fasta -output PHI.udb
 fi
 
 
