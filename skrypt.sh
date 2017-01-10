@@ -65,10 +65,10 @@ do
          file="$*"
          shift 2
          ;;
-     # -*)
-     #    echo "Error"
-     #    exit 1
-     #    ;;
+      -*)
+         echo "Error"
+         exit 1
+         ;;
       *) #no more options
          break
          ;;
@@ -86,7 +86,7 @@ if [ $# = "0" ]; then
 
    elif [ "$metod" = "phi" ]; then
       ./phi.sh $evalue $file auxenochlorella_protothecoides.fasta chlorella_variabilis.fasta helicosporidium_unip_proteins.fasta Saccharomyces_cerevisiae.fasta
-   else echo "Błędnie wprowadzona komenda. Schemat: ./skrypt -m nazwa_metody -e evalue -p pliki , gdzie nazwa_metody to możliwe jedno z: cazy, merops lub phi . Evalue powinno być w formacie np. 1e-9  . Natomiast pliki są ścieżkami dostępu plików FASTA na których ma zostać przeprowadzaona annotacja"
+   else echo "Błędnie wprowadzona komenda. Schemat: ./skrypt -m nazwa_metody -e evalue -f pliki , gdzie nazwa_metody to możliwe jedno z: cazy, merops lub phi . Evalue powinno być w formacie np. 1e-9  . Natomiast pliki są ścieżkami dostępu plików FASTA na których ma zostać przeprowadzaona annotacja"
    fi
 
 else
@@ -99,6 +99,6 @@ else
 
    elif [ "$metod" = "phi" ]; then
       ./phi.sh $evalue $file 
-   else echo "Błędnie wprowadzona komenda. Schemat: ./skrypt -m nazwa_metody -e evalue -p pliki , gdzie nazwa_metody to możliwe jedno z: cazy, merops lub phi . Evalue powinno być w formacie np. 1e-9  . Natomiast pliki są ścieżkami dostępu plików FASTA na których ma zostać przeprowadzona annotacja"
+   else echo "Błędnie wprowadzona komenda. Schemat: ./skrypt -m nazwa_metody -e evalue -f pliki , gdzie nazwa_metody to możliwe jedno z: cazy, merops lub phi . Evalue powinno być w formacie np. 1e-9  . Natomiast pliki są ścieżkami dostępu plików FASTA na których ma zostać przeprowadzona annotacja"
    fi
 fi
