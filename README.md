@@ -4,12 +4,13 @@ Bioinformatic tool to functional annotation. Using databases CaZy, MEROPS and PH
 You must import all files and go for folder in all of then.
 Change mode for main script:
  > chmod +x skrypt.sh
- 
- !!! import dabatabase file ... how to help? (big size)
+
  
  you can use tool:
  
  > ./skrypt.sh -m [metod] -e [evalue] -f [file]
+ 
+ When you use tool first time, you must be patient, because tool will be downloading databases.
  
  where:
  -m | --metod       which database you use: cazy, merops or phi
