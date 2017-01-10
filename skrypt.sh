@@ -1,36 +1,36 @@
 #!/bin/sh
 
-if [ AA.udb does not exist ];
+if [ ! -f AA.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 1 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/AA.udb
 fi
-if [ CE.udb does not exist ];
+if [ ! -f CE.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 2 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/CE.udb
 fi
-if [ GH.udb does not exist ];
+if [ ! -f GH.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 3 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/GH.udb
 fi
-if [ GT.udb does not exist ];
+if [ ! -f GT.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 4 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/GT.udb
 fi
-if [ PL.udb does not exist ];
+if [ ! -f PL.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 5 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/PL.udb
 fi
-if [ merops_scan.udb does not exist ];
+if [ ! -f merops_scan.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 6 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/merops_scan.udb
 fi
-if [ PHI.udb does not exist ];
+if [ ! -f PHI.udb ];
 then
    echo "Pierwsze użycie programu, trwa pobieranie danych 7 z 7"
    wget students.mimuw.edu.pl/~kn348856/annotationCMP/PHI.udb
